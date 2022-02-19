@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProcurarRestauranteActivity">
+
+    <Button
+        android:id="@+id/avaliacao5"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:enabled="true"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/procurarBarato"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/avaliacao3"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:enabled="true"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/procurarMedio"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/avaliacao2"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:enabled="true"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.286"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/procurarCaro"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/avaliacao4"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:enabled="true"
+        android:text="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/procurarMedio"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/avaliacao1"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:enabled="true"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/procurarCaro"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/procurarBarato"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="224dp"
+        android:enabled="true"
+        android:text="barato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/procurarCaro"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="224dp"
+        android:enabled="true"
+        android:text="caro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/procurarMedio"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="224dp"
+        android:enabled="true"
+        android:text="medio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/procurar"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:enabled="true"
+        android:text="pesquisar"
+        app:layout_constraintBottom_toTopOf="@+id/procurarBarato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <EditText
+        android:id="@+id/procuraRestaurante"
+        android:layout_width="182dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Nome do Restaurante"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="151dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="44dp"
+        android:text="Procure um restaurante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Preço"
+        app:layout_constraintBottom_toTopOf="@+id/procurarMedio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/procuraRestaurante"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="69dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="36dp"
+        android:text="Avaliação"
+        app:layout_constraintBottom_toTopOf="@+id/avaliacao3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/procurarMedio"
+        app:layout_constraintVertical_bias="0.758" />
+</androidx.constraintlayout.widget.ConstraintLayout>

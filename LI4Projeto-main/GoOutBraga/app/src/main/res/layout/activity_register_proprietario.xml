@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.RegisterProprietarioActivity">
+
+    <EditText
+        android:id="@+id/Cardapio"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="Cardapio"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contacto" />
+
+    <EditText
+        android:id="@+id/contacto"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="Contacto"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horaF" />
+
+    <EditText
+        android:id="@+id/horaF"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="Hora de fecho"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horaA" />
+
+    <EditText
+        android:id="@+id/horaA"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="Hora de abertura"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeRest" />
+
+    <EditText
+        android:id="@+id/nomeRest"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="Nome do Restaurante"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Id" />
+
+    <EditText
+        android:id="@+id/Id"
+        android:layout_width="376dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="Id do restaurante"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordProp" />
+
+    <EditText
+        android:id="@+id/usernameProp"
+        android:layout_width="376dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProp" />
+
+    <EditText
+        android:id="@+id/nomeProp"
+        android:layout_width="384dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="Nome"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registoProprietario" />
+
+    <EditText
+        android:id="@+id/passwordProp"
+        android:layout_width="376dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/prompt_password"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameProp" />
+
+    <Button
+        android:id="@+id/criarProp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="64dp"
+        android:enabled="true"
+        android:text="Create accont"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/passwordProp"
+        app:layout_constraintStart_toStartOf="@+id/passwordProp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/registoProprietario"
+        android:layout_width="195dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Registar Proprietario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
